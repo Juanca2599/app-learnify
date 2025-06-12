@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Materias.css";
-import SideMenu from "../../components/SideMenu/SideMenu";
-import Header from "../../components/Header/Header";
 import { alertaConfirmacionEliminarMateria } from "../../helpers/funciones";
+import { Link } from "react-router-dom";
 let apiMaterias = "http://localhost:3000/materias"
 
 const Materias = () => {
@@ -28,6 +27,9 @@ const Materias = () => {
   if (usuario.tipoUsuario == "administrador") return (
         <div className="materias-container">
           <h1 className="administrador-materias-title">Gestiona las clases y materias</h1>
+          <div className="container-button-agregar-materia">
+            <Link to="/home/clases/crear"> <button className="button-agregar-materia">+ Agregar Materia</button> </Link>
+          </div>
             <section className="container-table-materias">
                         <table>
                             <thead>
@@ -55,7 +57,7 @@ const Materias = () => {
                                             <td className="td-materia-color">{materia.color}<div className="color-materia-td" style={{backgroundColor: `${materia.color}`}}></div></td>
                                         
                                             <td>
-                                                <button className="editar-usuario-button" onClick={() => editarMateria(materia)}>Editar</button>{" "}
+                                                <Link className="link-editar-materia" to={"/home/clases/editar/"+materia.id}> <button className="editar-usuario-button" >Editar</button> </Link>
                                                 <button className="eliminar-usuario-button" onClick={() => eliminarMateria(materia.id)}>Eliminar</button>
                                             </td>
                                         </tr>

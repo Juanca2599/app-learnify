@@ -38,7 +38,7 @@
     },
     {
       "id": "4",
-      "tipoUsuario": "administrador",
+      "tipoUsuario": "estudiante",
       "nombre": "Juan Carlos Caro Muriel",
       "usuario": "admin4",
       "contrasena": "admin4",
