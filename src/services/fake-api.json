@@ -71,6 +71,18 @@
         "direccion": "calle",
         "telefono": "123"
       }
+    },
+    {
+      "id": "7b84",
+      "tipoUsuario": "docente",
+      "nombre": "yoshi",
+      "usuario": "yoshi",
+      "contrasena": "123",
+      "datos_personales": {
+        "fecha_nacimiento": "1990-06-15",
+        "direccion": "Calle cesde",
+        "telefono": "32222222"
+      }
     }
   ],
   "materias": [
@@ -288,6 +300,19 @@
       "genero": "Prefiero no decirlo",
       "curso": "",
       "fechaMatricula": ""
+    },
+    {
+      "id": "276d",
+      "idEstudiante": "7b84",
+      "nombre": "yoshi",
+      "apellidos": "",
+      "tipoIdentificacion": "",
+      "correo": "",
+      "identificacion": "",
+      "edad": "34",
+      "genero": "Femenino",
+      "curso": "",
+      "fechaMatricula": "2025-06-12"
     }
   ]
 }
